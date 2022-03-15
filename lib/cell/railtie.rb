@@ -52,6 +52,9 @@ module Cell
         require "cell/helper/asset_helper"
         include Cell::Helper::AssetHelper
 
+        require "cell/helper/view_helper"
+        include Cell::Helper::ViewHelper
+
         # set VM#cache_store, etc.
         include RailsExtensions::ViewModel
       end
